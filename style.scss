@@ -1,0 +1,36 @@
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.parent {
+  width: 50px;
+  aspect-ratio: 1;
+  background: lightblue;
+  border-radius: 50%;
+
+  position: relative;
+}
+
+.circle {
+  --size: 25px;
+  --radius: 100px;
+  width: var(--size);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: orangered;
+
+  // There are two ways to place items in a circle orbit.
+  // Either, you absolute position things in the center, and then transfer it to the correct position.
+  // Or, use the cos/sin to put it to the desired radius, and then use transform to put it into the central of the position.
+  position: absolute;
+  left: calc(var(--size) / 2);
+  top: calc(var(--size) / 2);
+
+  // cos is x-axis and sin is y-axis value.
+  transform: translate(
+      calc(cos(var(--degrees)) * var(--radius)),
+      calc(sin(var(--degrees)) * var(--radius))
+  );
+}
