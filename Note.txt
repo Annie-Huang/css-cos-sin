@@ -1,0 +1,11 @@
+I should have paid more attention in Math class - CSS Trigonometry (https://www.youtube.com/watch?v=eO33Rh3GFGk)
+
+https://codepen.io/kevinpowell/pen/qBMQJVr?editors=1100
+https://codepen.io/kevinpowell/pen/MWqXwyE/5a86eb4081548272d1bcf3eab23de5de
+
+https://github.com/Annie-Huang/css-cos-sin
+
+------------------------------------------------------------
+
+How to draw 8 | 12 circle around the central point.
+
