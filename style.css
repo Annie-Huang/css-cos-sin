@@ -25,4 +25,52 @@ body {
   transform: translate(calc(cos(var(--degrees)) * var(--radius)), calc(sin(var(--degrees)) * var(--radius)));
 }
 
+.circle:nth-of-type(1) {
+  --degrees: calc(0 * (360deg / 12));
+}
+
+.circle:nth-of-type(2) {
+  --degrees: calc(1 * (360deg / 12));
+}
+
+.circle:nth-of-type(3) {
+  --degrees: calc(2 * (360deg / 12));
+}
+
+.circle:nth-of-type(4) {
+  --degrees: calc(3 * (360deg / 12));
+}
+
+.circle:nth-of-type(5) {
+  --degrees: calc(4 * (360deg / 12));
+}
+
+.circle:nth-of-type(6) {
+  --degrees: calc(5 * (360deg / 12));
+}
+
+.circle:nth-of-type(7) {
+  --degrees: calc(6 * (360deg / 12));
+}
+
+.circle:nth-of-type(8) {
+  --degrees: calc(7 * (360deg / 12));
+}
+
+.circle:nth-of-type(9) {
+  --degrees: calc(8 * (360deg / 12));
+}
+
+.circle:nth-of-type(10) {
+  --degrees: calc(9 * (360deg / 12));
+}
+
+.circle:nth-of-type(11) {
+  --degrees: calc(10 * (360deg / 12));
+}
+
+.circle:nth-of-type(12) {
+  --degrees: calc(11 * (360deg / 12));
+}
+
 /*# sourceMappingURL=style.css.map */

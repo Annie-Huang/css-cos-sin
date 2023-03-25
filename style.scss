@@ -29,8 +29,52 @@ body {
   top: calc(var(--size) / 2);
 
   // cos is x-axis and sin is y-axis value.
+  // --degree value is place into each individual circle below.
   transform: translate(
-      calc(cos(var(--degrees)) * var(--radius)),
-      calc(sin(var(--degrees)) * var(--radius))
+    calc(cos(var(--degrees)) * var(--radius)),
+    calc(sin(var(--degrees)) * var(--radius))
   );
 }
+
+// in this CSS pane, go to the down arrow icon
+// and select "view compiled css" to see the
+// CSS instead of the Sass
+
+// $ is the scss variable, the value for the $total variable needs to match the number of <div class="circle"></div> under the .parent element
+// When you use it to do calculation, then you need to add in the #
+//$total: 8;
+$total: 12;
+
+// not sure why the author wants to start from 0, it can start from 1-8, I guess it wants to start from
+// 3'clock position, rather than 4:30'clock position.
+@for $i from 0 through ($total - 1) {
+  .circle:nth-of-type(#{$i + 1}) {
+    --degrees: calc(#{$i} * (360deg / #{$total}));
+  }
+}
+
+//// When $total: 8, we want to get into the following values:
+//.circle:nth-of-type(1) {
+//  --degrees: 0deg;
+//}
+//.circle:nth-of-type(2) {
+//  --degrees: 45deg;
+//}
+//.circle:nth-of-type(3) {
+//  --degrees: 90deg;
+//}
+//.circle:nth-of-type(4) {
+//  --degrees: 135deg;
+//}
+//.circle:nth-of-type(5) {
+//  --degrees: 180deg;
+//}
+//.circle:nth-of-type(6) {
+//  --degrees: 225deg;
+//}
+//.circle:nth-of-type(7) {
+//  --degrees: 270deg;
+//}
+//.circle:nth-of-type(8) {
+//  --degrees: 315deg;
+//}
