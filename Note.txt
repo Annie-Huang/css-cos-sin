@@ -9,3 +9,6 @@ https://github.com/Annie-Huang/css-cos-sin
 
 How to draw 8 | 12 circle around the central point.
 
+How to draw a snake animation
+npm run start2 -----> then go to http://localhost:3000/index2.html
+
