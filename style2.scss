@@ -12,7 +12,7 @@ div {
   border-radius: 50%;
   background: orange;
   animation: rise 2s infinite ease-in-out alternate;
-  //animation-delay: var(--delay);
+  animation-delay: var(--delay);
 }
 
 @keyframes rise {
@@ -21,7 +21,8 @@ div {
   }
 }
 
-@for $i from 1 through 10 {
+// sin(50) is sin(50deg)
+@for $i from 1 through 12 {
   div:nth-child(#{$i}) {
     --delay: calc(sin(50) * #{$i}s);
   }

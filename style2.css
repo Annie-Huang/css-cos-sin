@@ -12,6 +12,7 @@ div {
   border-radius: 50%;
   background: orange;
   animation: rise 2s infinite ease-in-out alternate;
+  animation-delay: var(--delay);
 }
 
 @keyframes rise {
@@ -57,6 +58,14 @@ div:nth-child(9) {
 
 div:nth-child(10) {
   --delay: calc(sin(50) * 10s);
+}
+
+div:nth-child(11) {
+  --delay: calc(sin(50) * 11s);
+}
+
+div:nth-child(12) {
+  --delay: calc(sin(50) * 12s);
 }
 
 /*# sourceMappingURL=style2.css.map */
