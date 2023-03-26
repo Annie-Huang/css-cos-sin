@@ -1,0 +1,62 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+div {
+  width: 15px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: orange;
+  animation: rise 2s infinite ease-in-out alternate;
+}
+
+@keyframes rise {
+  to {
+    transform: translateY(500%);
+  }
+}
+div:nth-child(1) {
+  --delay: calc(sin(50) * 1s);
+}
+
+div:nth-child(2) {
+  --delay: calc(sin(50) * 2s);
+}
+
+div:nth-child(3) {
+  --delay: calc(sin(50) * 3s);
+}
+
+div:nth-child(4) {
+  --delay: calc(sin(50) * 4s);
+}
+
+div:nth-child(5) {
+  --delay: calc(sin(50) * 5s);
+}
+
+div:nth-child(6) {
+  --delay: calc(sin(50) * 6s);
+}
+
+div:nth-child(7) {
+  --delay: calc(sin(50) * 7s);
+}
+
+div:nth-child(8) {
+  --delay: calc(sin(50) * 8s);
+}
+
+div:nth-child(9) {
+  --delay: calc(sin(50) * 9s);
+}
+
+div:nth-child(10) {
+  --delay: calc(sin(50) * 10s);
+}
+
+/*# sourceMappingURL=style2.css.map */

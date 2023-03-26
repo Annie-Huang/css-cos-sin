@@ -1,0 +1,28 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+div {
+  width: 15px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: orange;
+  animation: rise 2s infinite ease-in-out alternate;
+  //animation-delay: var(--delay);
+}
+
+@keyframes rise {
+  to {
+    transform: translateY(500%);
+  }
+}
+
+@for $i from 1 through 10 {
+  div:nth-child(#{$i}) {
+    --delay: calc(sin(50) * #{$i}s);
+  }
+}
